@@ -13,10 +13,11 @@ class ProductProvider extends Component {
     cartTax: 0,
     cartTotal: 0
   };
+
   componentDidMount() {
     this.setProducts();
   }
-
+  
   setProducts = () => {
     let products = [];
     storeProducts.forEach(item => {

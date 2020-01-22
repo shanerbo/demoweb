@@ -25,8 +25,7 @@ class Navbar extends Component{
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="product.html">Product</a></li>
                                     <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="cart.html"><button><span className="mr-2"><i className="fas fa-cart-plus " /></span>my cart</button></a></li>
-           
+                                    <li><a href="cart.html"><button><span className="mr-2"><i className="fas fa-cart-plus " /></span>my cart</button></a></li>       
                                     </ul>
                                 </div>
                                 </div>
@@ -37,8 +36,6 @@ class Navbar extends Component{
             </header>
         </div>
         )
-
-
     }
 
 
