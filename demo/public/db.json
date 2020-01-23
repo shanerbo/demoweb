@@ -1,0 +1,83 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "sku": 1,
+        "title": "iPhone11",
+        "description": "Space Grey ",
+        "price": 10,
+        "isFreeShipping": true
+      },
+  
+      {
+        "id": 2,
+        "sku": 2,
+        "title": "iPhone8",
+        "description": "Red",
+        "price": 14.9,
+        "isFreeShipping": true
+      },
+  
+      {
+        "id": 3,
+        "sku": 3,
+        "title": "iPhone X",
+        "description": "black",
+        "price": 14.9,
+        "isFreeShipping": true
+      },
+  
+      {
+        "id": 4,
+        "sku": 4,
+        "title": "iPhone 7 plus",
+        "description": "black",
+        "price": 25.9,
+        "isFreeShipping": false
+      },
+  
+      {
+        "id": 5,
+        "sku": 5,
+        "title": "Macbook Pro",
+        "description": "15 inch",
+        "price": 10.9,
+        "isFreeShipping": false
+      },
+  
+      {
+        "id": 6,
+        "sku": 6,
+        "title": "iMac",
+        "description": "27 inch",
+        "price": 49.9,
+        "isFreeShipping": false
+      },
+  
+      {
+        "id": 7,
+        "sku": 7,
+        "title": "MacPro",
+        "description": "more powerful",
+        "price": 22.5,
+        "isFreeShipping": true
+      },
+  
+      {
+        "id": 8,
+        "sku": 8,
+        "title": "airpods pro",
+        "description": "2nd edition",
+        "price": 18.7,
+        "isFreeShipping": false
+      },
+      {
+        "id": 9,
+        "sku": 9,
+        "title": "apple watch",
+        "description": "5th editon",
+        "price": 134.9,
+        "isFreeShipping": true
+      }
+    ]
+  }
