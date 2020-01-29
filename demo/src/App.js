@@ -3,6 +3,7 @@ import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Cart from "./components/Cart";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -78,8 +79,6 @@ class App extends Component {
   }
 
 
-
-
   listProducts = () => {
     this.setState(state => {
       if (state.sort !== "") {
@@ -109,9 +108,10 @@ class App extends Component {
       <div className="container">
         
         <img src={`products/logo.png `} alt="App-logo" width="200" height="100" />
-       
         <h1>Shopping Center</h1>
+ 
         <hr />
+
         <div className="row">
           <div className="col-md-9">
             <Filter
@@ -132,11 +132,17 @@ class App extends Component {
               handlePlusFromCart={this.handlePlusFromCart}
 
             />
+            
           </div>
         </div>
+        
       </div>
+
+
     );
+    
   }
+  
 }
 
 export default App;
