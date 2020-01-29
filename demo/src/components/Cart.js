@@ -1,5 +1,4 @@
-  
-import React, { Component } from 'react';
+  import React, { Component } from 'react';
 import util from '../util'
 export default class Cart extends Component {
     render() {
@@ -18,14 +17,20 @@ export default class Cart extends Component {
                                 <li key={item.id}>
                                     <b>{item.title}</b>
                                     <button style={{ float: 'right' }} className="btn btn-danger btn-xs"
-                                        onClick={(e) => this.props.handleRemoveFromCart(e, item)}>X</button>
+                                        onClick={(e) => this.props.handleRemoveFromCart(e, item)}>Delete</button>
                                     <br />
-                                    {item.count} X {util.formatCurrency(item.price)}
+                                    <button style={{ float: 'pull-right' }} className="btn btn-danger btn-xs"
+                                        onClick={(e) => this.props.handlMinusFromCart(e, item)}>-</button>
+                                    {item.count} 
+                                    <button style={{ float: 'pull right' }} className="btn btn-danger btn-xs"
+                                        onClick={(e) => this.props.handleAddToCart(e, item)}>+</button>
+                                    <br />
+                                    {util.formatCurrency(item.price)}
                                 </li>))
                             }
                         </ul>
-
-                        <b>Sum: {util.formatCurrency(cartItems.reduce((a, c) => (a + c.price * c.count), 0))}
+                        
+                        <b>Total: {util.formatCurrency(cartItems.reduce((a, c) => (a + c.price * c.count), 0))}
                         </b>
                         <button onClick={() => alert('Todo: Implement checkout page.')} className="btn btn-primary">checkout</button>
                     </div>

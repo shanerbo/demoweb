@@ -62,6 +62,23 @@ class App extends Component {
       return { cartItems: cartItems };
     });
   };
+  handleMinusFromCart= (e,product) => {
+    if(e.count>1){
+      this.setState({
+        count: this.state.count - 1
+      });
+    }
+    else{
+      this.setState(state => {
+        const cartItems = state.cartItems.filter(a => a.id !== product.id);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        return { cartItems: cartItems };
+      });
+    }
+  }
+
+
+
 
   listProducts = () => {
     this.setState(state => {
@@ -91,7 +108,7 @@ class App extends Component {
     return (
       <div className="container">
         
-        <img src={`products/logo.png `} alt="logo" width="200" height="100"/>
+        <img src={`products/logo.png `} alt="App-logo" width="200" height="100" />
        
         <h1>Shopping Center</h1>
         <hr />
@@ -111,6 +128,9 @@ class App extends Component {
             <Cart
               cartItems={this.state.cartItems}
               handleRemoveFromCart={this.handleRemoveFromCart}
+              handleMinusFromCart={this.handleMinusFromCart}
+              handlePlusFromCart={this.handlePlusFromCart}
+
             />
           </div>
         </div>
