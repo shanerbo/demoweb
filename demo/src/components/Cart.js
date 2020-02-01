@@ -20,10 +20,10 @@ export default class Cart extends Component {
                                         onClick={(e) => this.props.handleRemoveFromCart(e, item)}>Delete</button>
                                     <br />
                                     <button style={{ float: 'pull-right' }} className="btn btn-danger btn-xs"
-                                        onClick={(e) => this.props.handlMinusFromCart(e, item)}>-</button>
+                                        onClick={(e) => this.props.handleMinusFromCart(e, item)}>-</button>
                                     {item.count} 
                                     <button style={{ float: 'pull right' }} className="btn btn-danger btn-xs"
-                                        onClick={(e) => this.props.handleAddToCart(e, item)}>+</button>
+                                        onClick={(e) => this.props.handlePlusFromCart(e, item)}>+</button>
                                     <br />
                                     {util.formatCurrency(item.price)}
                                 </li>))
