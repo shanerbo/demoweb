@@ -3,7 +3,7 @@ import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Cart from "./components/Cart";
 import "./App.css";
-import {Link} from "react-router-dom";
+import {Link, Router} from "react-router-dom";
 
 class App extends Component {
     constructor(props) {
@@ -146,8 +146,6 @@ class App extends Component {
                 </div>
 
             </div>
-
-
         );
 
     }
